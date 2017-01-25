@@ -55,6 +55,7 @@ body {
 }
 
 .logo {
+  display: block;
   background: url('../images/nyt-logo.svg') no-repeat;
   height: 220px;
 }
@@ -64,5 +65,8 @@ body {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
   color: #c2c2c2;
 }
