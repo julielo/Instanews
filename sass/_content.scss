@@ -1,3 +1,7 @@
+//**********************************
+//  Global
+//**********************************
+
 body {
   display: flex;
   flex-direction: column;
@@ -8,30 +12,54 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center;
-
 }
 
-.container {
-  padding: 50px;
+header {
+  align-self: flex-start;
+  min-height: 9em;
 }
 
 .logo {
-  display: flex;
-  justify-content: center;
   background: url('../../images/nyt-logo.svg') no-repeat;
   height: 221px;
   width: 195px;
-  margin-top: 100px;
+  padding-right: 1rem;
+  flex: 1;
+}
 
-  @include media($desktop-width) {
-    justify-content: flex-start;
-  }
+//****************************
+// Section drop-down menu
+//****************************
+
+p {
+  padding: 1rem;
+  font-size: .75rem;
+}
+
+form {
+  min-height: 9rem;
+}
+
+select {
+  padding: 2.5px;
+  font-size: 1rem;
+  outline-color: #000;
+}
+
+select:active, select:hover {
+  outline-color: #000;
+}
+
+//***************************
+// Footer
+//***************************
+
+footer {
+  align-self:center;
+  font-size: 1.25rem;
+  padding: 1rem;
 }
 
 .format-text {
   text-transform: uppercase;
-}
-
-footer {
-  margin-top: 100px;
 }
