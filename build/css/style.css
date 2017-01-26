@@ -93,14 +93,6 @@ header {
       align-self: flex-start;
   min-height: 9em; }
 
-.logo {
-  background: url("../../images/nyt-logo.svg") no-repeat;
-  height: 221px;
-  width: 195px;
-  padding-right: 1rem;
-  -ms-flex: 1;
-      flex: 1; }
-
 p {
   padding: 1rem;
   font-size: .75rem; }
@@ -121,10 +113,8 @@ footer {
       -ms-grid-row-align: center;
       align-self: center;
   font-size: 1.25rem;
-  padding: 1rem; }
+  padding: 1rem;
+  color: #c2c2c2; }
 
 .format-text {
   text-transform: uppercase; }
-
-footer {
-  color: #c2c2c2; }
