@@ -1,0 +1,15 @@
+$tablet-breakpoint: 600px;
+$desktop-breakpoint: 1000px;
+
+@mixin breakpoint($width){
+  @if $width == tablet-screen {
+    @media only screen and (min-width: $tablet-breakpoint) {
+      @content
+    }
+  }
+  @if $width == desktop-screen {
+    @media only screen and (min-width: $desktop-breakpoint) {
+      @content
+    }
+  }
+}
