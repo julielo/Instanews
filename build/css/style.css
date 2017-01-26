@@ -73,6 +73,11 @@ table {
   font-weight: normal;
   font-style: italic; }
 
+header {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  min-height: 9em; }
+
 body {
   display: -ms-flexbox;
   display: flex;
@@ -87,11 +92,6 @@ body {
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center; }
-
-header {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  min-height: 9em; }
 
 p {
   padding: 1rem;
