@@ -80,11 +80,16 @@ body {
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   background-color: #000000;
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 16px;
   text-align: center; }
+
+.container {
+  padding: 50px; }
 
 .logo {
   display: -ms-flexbox;
@@ -92,11 +97,23 @@ body {
   -ms-flex-pack: center;
       justify-content: center;
   background: url("../../images/nyt-logo.svg") no-repeat;
-  height: 220px;
-  width: 200px; }
+  height: 221px;
+  width: 195px;
+  margin-top: 100px; }
+  @media all and (min-width: 600px) {
+    .logo {
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
+  @media all and (min-width: 1000px) {
+    .logo {
+      -ms-flex-pack: start;
+          justify-content: flex-start; } }
 
 .format-text {
   text-transform: uppercase; }
+
+footer {
+  margin-top: 100px; }
 
 footer {
   color: #c2c2c2; }

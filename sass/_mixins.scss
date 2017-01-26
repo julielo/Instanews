@@ -1,15 +1,22 @@
-$tablet-breakpoint: 600px;
-$desktop-breakpoint: 1000px;
+// @mixin breakpoint($width){
+//   @if $width == tablet-screen {
+//     @media all and (min-width: $tablet-width) {
+//       @content
+//     }
+//   }
+//   @if $width == desktop-screen {
+//     @media only screen and (min-width: $desktop-width) {
+//       @content
+//     }
+//   }
+// }
 
-@mixin breakpoint($width){
-  @if $width == tablet-screen {
-    @media only screen and (min-width: $tablet-breakpoint) {
-      @content
-    }
+@mixin media($width) {
+  @media all and (min-width: $tablet-width) {
+    @content;
   }
-  @if $width == desktop-screen {
-    @media only screen and (min-width: $desktop-breakpoint) {
-      @content
-    }
+
+  @media all and (min-width: $desktop-width) {
+    @content;
   }
 }
