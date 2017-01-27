@@ -15,16 +15,29 @@ body {
 }
 
 //****************************
-// Section drop-down menu
+// Topics drop-down menu
 //****************************
+
+.logo {
+  @include media ($tablet-width) {
+
+  }
+}
+// .myList {
+//   font-size: 10rem;
+//   color: white;
+// }
+
+.topics {
+  min-height: 9rem;
+  @include media ($tablet-width) {
+
+  }
+}
 
 p {
   padding: 1rem;
   font-size: .75rem;
-}
-
-form {
-  min-height: 9rem;
 }
 
 select {

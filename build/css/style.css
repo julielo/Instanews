@@ -93,12 +93,12 @@ body {
   font-size: 16px;
   text-align: center; }
 
+.topics {
+  min-height: 9rem; }
+
 p {
   padding: 1rem;
   font-size: .75rem; }
-
-form {
-  min-height: 9rem; }
 
 select {
   padding: 2.5px;
@@ -115,6 +115,14 @@ footer {
   font-size: 1.25rem;
   padding: 1rem;
   color: #c2c2c2; }
+  @media all and (min-width: 600px) {
+    footer {
+      -ms-flex-order: 3;
+          order: 3; } }
+  @media all and (min-width: 1000px) {
+    footer {
+      -ms-flex-order: 3;
+          order: 3; } }
 
 .format-text {
   text-transform: uppercase; }
