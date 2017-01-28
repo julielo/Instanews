@@ -1,4 +1,38 @@
 header {
-  align-self: flex-start;
-  min-height: 9em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6.16rem;
+}
+
+//****************************
+// Sections drop-down menu
+//****************************
+
+.logo {
+  @include media ($tablet-width) {
+
+  }
+}
+
+.topics {
+  min-height: 9rem;
+  @include media ($tablet-width) {
+
+  }
+}
+
+p {
+  padding: 1rem;
+  font-size: .75rem;
+}
+
+select {
+  padding: 2.5px;
+  font-size: 1rem;
+  outline-color: #000;
+}
+
+select:active, select:hover {
+  outline-color: #000;
 }

@@ -74,24 +74,13 @@ table {
   font-style: italic; }
 
 header {
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  min-height: 9em; }
-
-body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 16px;
-  text-align: center; }
+  padding-top: 6.16rem; }
 
 .topics {
   min-height: 9rem; }
@@ -107,6 +96,13 @@ select {
 
 select:active, select:hover {
   outline-color: #000; }
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  text-align: center; }
 
 footer {
   -ms-flex-item-align: center;
