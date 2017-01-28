@@ -1,10 +1,10 @@
 $(function() {
 
   var $apiList = $('.apiList');
-  $apiList.empty();
+
 
   $('select').change('click', function () {
-      // console.log(this.value);
+    $apiList.empty();
 
     var url = 'https://api.nytimes.com/svc/topstories/v2/';
     url += this.value;
@@ -29,8 +29,11 @@ $(function() {
         resultData += value.multimedia[4].url;
         resultData += ' alt='
         resultData += value.title;
-        resultData += '>';
+        resultData += '">';
         resultData += '</a>';
+        resultData += '<p>';
+        resultData += value.abstract;
+        resultData += '</p>';
         resultData += '</li>';
       });
 
