@@ -19,13 +19,19 @@ header {
 //****************************
 
 .logo {
+  margin-top: 8rem;
+  border: 2px dotted orange;
+
   @include media ($tablet-width) {
     display: inline-flex;
-    height: 144px;
+    margin-top: 1rem;
+    height: 25%;
+    // height: 144px;
     width: 30%;
     border: 2px dotted green;
   }
   @include media ($desktop-width) {
+    height: 100%;
   }
 }
 

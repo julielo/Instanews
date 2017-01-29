@@ -94,13 +94,20 @@ header {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
 
-@media all and (min-width: 600px) {
-  .logo {
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    height: 144px;
-    width: 30%;
-    border: 2px dotted green; } }
+.logo {
+  margin-top: 8rem;
+  border: 2px dotted orange; }
+  @media all and (min-width: 600px) {
+    .logo {
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      margin-top: 1rem;
+      height: 25%;
+      width: 30%;
+      border: 2px dotted green; } }
+  @media all and (min-width: 1000px) {
+    .logo {
+      height: 100%; } }
 
 @media all and (min-width: 600px) {
   .topics {
