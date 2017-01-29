@@ -3,9 +3,9 @@
 //**********************************
 
 body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Open Sans";
-  font-size: 16px;
+  background-color: $bg-color;
+  color: $font-color;
+  font-family: $main-font;
+  font-size: $base-font-size;
   text-align: center;
 }

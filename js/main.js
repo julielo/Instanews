@@ -2,7 +2,9 @@ $(function() {
 
   var $apiList = $('.apiList');
 
-
+  /*New York Times API requires an authentication key and the URL for
+  each topic is different, so a string for the URL is created based on
+  option selected in drop-down menu. */
   $('select').change('click', function () {
     $apiList.empty();
 
@@ -16,25 +18,25 @@ $(function() {
       method: 'GET',
     }).done(function(data) {
       var resultData = ''
+
+      /*Filter and Splice methods used on array to filter the first 12 articles
+      that only have images */
       var $dataSet = data.results.filter(function (item) {
       return item.multimedia.length;
       }).splice(0, 12);
 
+      /*Loop iterates over array to create a list of images with links to article,
+      alt tags, and captions */
       $.each($dataSet, function(key, value) {
-        resultData += '<li>';
-        resultData += '<a href=';
+        resultData += '<li> <a href=';
         resultData += value.url;
-        resultData += '>';
-        resultData += '<img src=';
+        resultData += '> <img src=';
         resultData += value.multimedia[4].url;
         resultData += ' alt='
         resultData += value.title;
-        resultData += '">';
-        resultData += '</a>';
-        resultData += '<p>';
+        resultData += '"> </a> <p>';
         resultData += value.abstract;
-        resultData += '</p>';
-        resultData += '</li>';
+        resultData += '</p> </li>';
       });
 
       $('.apiList').append(resultData);
