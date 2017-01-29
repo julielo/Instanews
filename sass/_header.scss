@@ -2,11 +2,15 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6.16rem;
+  // padding-top: 6.16rem;
+  height: 37rem;
   @include media ($tablet-width) {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+  @include media ($desktop-width) {
+    justify-content: flex-start;
   }
 }
 
@@ -18,7 +22,10 @@ header {
   @include media ($tablet-width) {
     display: inline-flex;
     height: 144px;
+    width: 30%;
     border: 2px dotted green;
+  }
+  @include media ($desktop-width) {
   }
 }
 

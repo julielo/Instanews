@@ -1,10 +1,14 @@
 footer {
-  align-self:center;
+  // display: flex;
+  // flex-direction: row;
+  align-content: flex-end;
+  text-align: center;
   font-size: 1.25rem;
-  padding: 1rem;
   color: #c2c2c2;
-  @include media ($tablet-width) {
-    order: 3;
+  border: 2px dotted blue;
+  @include media ($desktop-width) {
+    // justify-content: flex-start;
+    text-align: left;
   }
 }
 
