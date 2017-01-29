@@ -81,9 +81,44 @@ header {
   -ms-flex-align: center;
       align-items: center;
   padding-top: 6.16rem; }
+  @media all and (min-width: 600px) {
+    header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: center;
+          justify-content: center; } }
+  @media all and (min-width: 1000px) {
+    header {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+      -ms-flex-pack: center;
+          justify-content: center; } }
 
-.topics {
-  min-height: 9rem; }
+@media all and (min-width: 600px) {
+  .logo {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 144px;
+    border: 2px dotted green; } }
+
+@media all and (min-width: 1000px) {
+  .logo {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    height: 144px;
+    border: 2px dotted green; } }
+
+@media all and (min-width: 600px) {
+  .topics {
+    border: 2px dotted red; } }
+
+@media all and (min-width: 1000px) {
+  .topics {
+    border: 2px dotted red; } }
 
 p {
   padding: 1rem;
