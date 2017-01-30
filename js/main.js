@@ -32,9 +32,9 @@ $(function() {
         resultData += value.url;
         resultData += '> <img src=';
         resultData += value.multimedia[4].url;
-        resultData += ' alt='
+        resultData += ' alt="'
         resultData += value.title;
-        resultData += '"> </a> <p>';
+        resultData += '"> </a> <p class="caption">';
         resultData += value.abstract;
         resultData += '</p> </li>';
       });

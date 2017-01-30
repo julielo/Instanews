@@ -9,3 +9,15 @@ body {
   font-size: $base-font-size;
   text-align: center;
 }
+
+li {
+  list-style: none;
+  position: relative;
+}
+
+.caption {
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.25) 0%, rgba(0,0,0,0.25) 100%);
+    position: absolute;
+    top: 100px;
+  }
