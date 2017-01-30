@@ -1,12 +1,12 @@
 $(function() {
 
-  var $apiList = $('.apiList');
+  var $articleList = $('.articleList');
 
   /*New York Times API requires an authentication key and the URL for
   each topic is different, so a string for the URL is created based on
   option selected in drop-down menu. */
   $('select').change('click', function () {
-    $apiList.empty();
+    $articleList.empty();
 
     var url = 'https://api.nytimes.com/svc/topstories/v2/';
     url += this.value;
@@ -39,7 +39,7 @@ $(function() {
         resultData += '</p> </li>';
       });
 
-      $('.apiList').append(resultData);
+      $('.articleList').append(resultData);
 
     }).fail(function() {
       console.log('This did not work')

@@ -151,7 +151,7 @@ li {
       -ms-flex: 0 2 25%;
           flex: 0 2 25%; } }
 
-.apiList {
+.articleList {
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: wrap;
