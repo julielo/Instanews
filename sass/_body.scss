@@ -1,0 +1,11 @@
+//**********************************
+// Applied to the whole site
+//**********************************
+
+body {
+  background-color: $bg-color;
+  color: $font-color;
+  font-family: $main-font;
+  font-size: $base-font-size;
+  text-align: center;
+}

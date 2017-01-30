@@ -73,6 +73,13 @@ table {
   font-weight: normal;
   font-style: italic; }
 
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-align: center; }
+
 header {
   display: -ms-flexbox;
   display: flex;
@@ -124,13 +131,6 @@ select {
 
 select:active, select:hover {
   outline-color: #000; }
-
-body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  text-align: center; }
 
 ul {
   display: -ms-flexbox;
