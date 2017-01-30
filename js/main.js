@@ -28,14 +28,19 @@ $(function() {
       /*Loop iterates over array to create a list of images with links to article,
       alt tags, and captions */
       $.each($dataSet, function(key, value) {
+        var url = value.url;
+        var image = value.multimedia[4].url;
+        var title = value.title;
+        var caption = value.abstract;
+
         resultData += '<li> <a href=';
-        resultData += value.url;
+        resultData += url;
         resultData += '> <img src=';
-        resultData += value.multimedia[4].url;
+        resultData += image;
         resultData += ' alt="'
-        resultData += value.title;
+        resultData += title;
         resultData += '" width=100% height=100%> </a> <p class="caption">';
-        resultData += value.abstract;
+        resultData += caption;
         resultData += '</p> </li>';
       });
 
