@@ -80,16 +80,16 @@ body {
   font-size: 16px;
   text-align: center; }
 
-header {
+.panel {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-align: center;
       align-items: center;
-  height: 37rem; }
+  height: 92vh; }
   @media all and (min-width: 600px) {
-    header {
+    .panel {
       display: -ms-flexbox;
       display: flex;
       -ms-flex-flow: row nowrap;
@@ -97,28 +97,56 @@ header {
       -ms-flex-pack: center;
           justify-content: center; } }
   @media all and (min-width: 1000px) {
-    header {
+    .panel {
       -ms-flex-pack: start;
           justify-content: flex-start; } }
 
-.logo {
-  margin-top: 8rem;
-  border: 2px dotted orange; }
+.panel-resize {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: auto; }
   @media all and (min-width: 600px) {
-    .logo {
-      display: -ms-inline-flexbox;
-      display: inline-flex;
-      margin-top: 1rem;
-      height: 25%;
-      width: 30%;
-      border: 2px dotted green; } }
+    .panel-resize {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+      padding-top: 1rem; } }
   @media all and (min-width: 1000px) {
-    .logo {
-      height: 100%; } }
+    .panel-resize {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; } }
 
 @media all and (min-width: 600px) {
-  .topics {
-    border: 2px dotted red; } }
+  .logo-wrapper {
+    width: 23%; } }
+
+@media all and (min-width: 1000px) {
+  .logo-wrapper {
+    width: 19%; } }
+
+.logo {
+  height: auto;
+  width: 100%;
+  padding-top: 50%; }
+  @media all and (min-width: 600px) {
+    .logo {
+      padding: 0; } }
+
+.logo-resize {
+  padding-top: 13%;
+  width: 144px; }
+  @media all and (min-width: 600px) {
+    .logo-resize {
+      padding-top: 1rem;
+      width: 67px; } }
+
+.topics {
+  padding-bottom: 34px; }
 
 p {
   padding: 1rem;

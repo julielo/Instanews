@@ -8,6 +8,9 @@ $(function() {
   $('select').change('click', function () {
     $articleList.empty();
 
+    $('.panel').removeClass('panel').addClass('panel-resize');
+    $('.logo').removeClass('logo').addClass('logo-resize');
+
     var url = 'https://api.nytimes.com/svc/topstories/v2/';
     url += this.value;
     url += '.json';
