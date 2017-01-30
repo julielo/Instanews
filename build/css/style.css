@@ -157,6 +157,12 @@ li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.caption {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+  position: absolute;
+  bottom: 0.1%;
+  text-align: left; }
+
 footer {
   -ms-flex-line-pack: end;
       align-content: flex-end;
