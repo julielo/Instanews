@@ -34,7 +34,7 @@ $(function() {
         resultData += value.multimedia[4].url;
         resultData += ' alt="'
         resultData += value.title;
-        resultData += '"> </a> <p class="caption">';
+        resultData += '" width=100% height=100%> </a> <p class="caption">';
         resultData += value.abstract;
         resultData += '</p> </li>';
       });
