@@ -14,18 +14,15 @@
 }
 
 .article-grid {
-  // flex: 0 2 auto;
   width:100%;
   list-style: none;
   position: relative;
   height: 40%;
 
   @include media ($tablet-width) {
-    // flex: 0 2 50%;
     width: 50%;
   }
   @include media ($desktop-width) {
-    // flex: 0 2 25%;
     width: 25%;
   }
 }
