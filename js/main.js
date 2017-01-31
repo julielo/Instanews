@@ -48,6 +48,7 @@ $(function() {
         resultData += '</p> </li>';
       });
 
+      $('.loadingImage').hide();
       $('.articleList').append(resultData);
 
     }).fail(function() {
@@ -58,4 +59,8 @@ $(function() {
       })
   });
 
+  //For all list items in list, open link in new window when clicked
+  $('.articleList').on('click', 'li', function() {
+         window.open($(this).find('a').attr('href'));
+     });
 });
