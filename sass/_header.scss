@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 //**********************************************
 // Wrapper for the Header section
 //**********************************************
+=======
+//Header wrapper
+>>>>>>> 825ef30558d3cf3d327525818165877beb3ca9fa
 .panel {
   display: flex;
   flex-direction: column;
@@ -16,9 +20,13 @@
   }
 }
 
+<<<<<<< HEAD
 //*********************************************
 // Used to resize header upon section selection
 //*********************************************
+=======
+//Used to resize header upon section selection
+>>>>>>> 825ef30558d3cf3d327525818165877beb3ca9fa
 .panel-resize {
   display: inline-flex;
   flex-direction: column;
@@ -33,6 +41,7 @@
     flex-flow: row wrap;
   }
 }
+<<<<<<< HEAD
 
 //******************************************
 // Sections drop-down menu
@@ -41,6 +50,18 @@
 .logo-wrapper {
   @include media ($tablet-width) {
     width: 23%;
+=======
+
+//****************************
+// Sections drop-down menu
+//****************************
+
+.logo-wrapper {
+  // border: 2px dotted orange;
+  @include media ($tablet-width) {
+    width: 23%;
+    // border: 2px dotted green;
+>>>>>>> 825ef30558d3cf3d327525818165877beb3ca9fa
   }
   @include media ($desktop-width) {
     width: 19%;
@@ -59,6 +80,10 @@
 .logo-resize {
   padding-top: 13%;
   width: 144px;
+<<<<<<< HEAD
+=======
+  // border: 2px dotted orange;
+>>>>>>> 825ef30558d3cf3d327525818165877beb3ca9fa
   @include media ($tablet-width) {
     padding-top:1rem;
     width: 67px;
@@ -68,6 +93,10 @@
 .topics {
   padding-bottom: 34px;
   @include media ($tablet-width) {
+<<<<<<< HEAD
+=======
+    // border: 2px dotted red;
+>>>>>>> 825ef30558d3cf3d327525818165877beb3ca9fa
   }
 }
 

@@ -11,7 +11,10 @@ $(function() {
   $('select').change('click', function () {
     $articleList.empty();
 
+<<<<<<< HEAD
     $('.loadingImage').show();
+=======
+>>>>>>> 825ef30558d3cf3d327525818165877beb3ca9fa
     $('.panel').removeClass('panel').addClass('panel-resize');
     $('.logo').removeClass('logo').addClass('logo-resize');
 
