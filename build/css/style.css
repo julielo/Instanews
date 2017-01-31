@@ -184,13 +184,19 @@ li {
           flex: 0 2 25%; } }
 
 .articleList {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.article-grid {
+  height: 420px;
+  background-size: cover; }
+
 .caption {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   bottom: 0.1%;
   text-align: left; }

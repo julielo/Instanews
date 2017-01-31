@@ -39,10 +39,8 @@
 //******************************************
 
 .logo-wrapper {
-  // border: 2px dotted orange;
   @include media ($tablet-width) {
     width: 23%;
-    // border: 2px dotted green;
   }
   @include media ($desktop-width) {
     width: 19%;
@@ -61,7 +59,6 @@
 .logo-resize {
   padding-top: 13%;
   width: 144px;
-  // border: 2px dotted orange;
   @include media ($tablet-width) {
     padding-top:1rem;
     width: 67px;
@@ -71,7 +68,6 @@
 .topics {
   padding-bottom: 34px;
   @include media ($tablet-width) {
-    // border: 2px dotted red;
   }
 }
 

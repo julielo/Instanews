@@ -7,7 +7,7 @@ $(function() {
   /*New York Times API requires an authentication key and the URL for
   each topic is different, so a string for the URL is created based on
   option selected in drop-down menu. */
-  
+
   $('select').change('click', function () {
     $articleList.empty();
 
@@ -30,7 +30,7 @@ $(function() {
       that only have images */
       var $dataSet = data.results.filter(function (item) {
       return item.multimedia.length;
-      }).splice(0, 12);
+      }).slice(0, 12);
 
       /*Loop iterates over array to create a list of images with links to article,
       alt tags, and captions */
@@ -40,17 +40,13 @@ $(function() {
         var title = value.title;
         var caption = value.abstract;
 
-        resultData += '<li> <a href=';
+        resultData += '<li class="article-grid"  alt="'+ title +'" style="background-image: url(' + image + ');"> <a href=';
         resultData += url;
-        resultData += '> <img src=';
-        resultData += image;
-        resultData += ' alt="'
-        resultData += title;
-        resultData += '" width=100% height=100%> </a> <p class="caption">';
+        resultData += '>';
+        resultData += ' </a> <p class="caption">';
         resultData += caption;
         resultData += '</p> </li>';
       });
-      // var unloadImage = $('.loading').hide();
 
       $('.articleList').append(resultData);
 
@@ -61,4 +57,5 @@ $(function() {
      $('.loadingImage').hide();
       })
   });
+
 });
