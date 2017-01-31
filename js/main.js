@@ -1,6 +1,6 @@
 
 $(function() {
-  $('select').selectric();
+  $('select').selectric(); // Use Selectric plugin for drop-down menu
 
   var $articleList = $('.articleList');
   $('.loadingImage').hide();
@@ -28,7 +28,7 @@ $(function() {
     }).done(function(data) {
       var resultData = ''
 
-      /*Filter and Splice methods used on array to filter the first 12 articles
+      /*Filter and Slice methods used on array to filter the first 12 articles
       that only have images */
       var $dataSet = data.results.filter(function (item) {
       return item.multimedia.length;
@@ -51,10 +51,10 @@ $(function() {
       });
 
       $('.loadingImage').hide();
-      // $('.articleList').append(resultData);
+      $('.articleList').append(resultData);
 
     }).fail(function() {
-      $('.loadingImage').append('p').text('Oops. This is embarrassing!');
+      $('.loadingImage').append('p').text('Oops. Well...this is embarrassing!');
     })
      .always(function() {
      $('.loadingImage').hide();
