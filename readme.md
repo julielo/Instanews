@@ -1,4 +1,4 @@
-# Instanews
+# Project 2: Instanews App
 Create a one-page, responsive website that allows a user to filter top news story categories via the New York Times API.
 
 # Technologies Used
