@@ -51,10 +51,10 @@ $(function() {
       });
 
       $('.loadingImage').hide();
-      $('.articleList').append(resultData);
+      // $('.articleList').append(resultData);
 
     }).fail(function() {
-      console.log('This did not work')
+      $('.loadingImage').append('p').text('Oops. This is embarrassing!');
     })
      .always(function() {
      $('.loadingImage').hide();
