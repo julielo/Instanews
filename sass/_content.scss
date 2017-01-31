@@ -1,5 +1,14 @@
-// For the article grid
+//****************************************************
+// Image that displays before articles are loaded
+//****************************************************
+.loadingImage img{
+  width: 50px;
+  margin: 0 auto;
+}
 
+//****************************************************
+// For the article grid
+//****************************************************
 ul {
   display: flex;
 }
@@ -19,9 +28,9 @@ li {
 }
 
 .articleList {
-flex-direction: row;
-flex-wrap: wrap;
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .caption {
   background:

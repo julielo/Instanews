@@ -1,4 +1,6 @@
-//Header wrapper
+//**********************************************
+// Wrapper for the Header section
+//**********************************************
 .panel {
   display: flex;
   flex-direction: column;
@@ -14,7 +16,9 @@
   }
 }
 
-//Used to resize header upon section selection
+//*********************************************
+// Used to resize header upon section selection
+//*********************************************
 .panel-resize {
   display: inline-flex;
   flex-direction: column;
@@ -30,9 +34,9 @@
   }
 }
 
-//****************************
+//******************************************
 // Sections drop-down menu
-//****************************
+//******************************************
 
 .logo-wrapper {
   // border: 2px dotted orange;

@@ -160,6 +160,10 @@ select {
 select:active, select:hover {
   outline-color: #000; }
 
+.loadingImage img {
+  width: 50px;
+  margin: 0 auto; }
+
 ul {
   display: -ms-flexbox;
   display: flex; }

@@ -1,13 +1,17 @@
 $(function() {
 
   var $articleList = $('.articleList');
+  $('.loadingImage').hide();
+
 
   /*New York Times API requires an authentication key and the URL for
   each topic is different, so a string for the URL is created based on
   option selected in drop-down menu. */
+  
   $('select').change('click', function () {
     $articleList.empty();
 
+    $('.loadingImage').show();
     $('.panel').removeClass('panel').addClass('panel-resize');
     $('.logo').removeClass('logo').addClass('logo-resize');
 
@@ -46,11 +50,15 @@ $(function() {
         resultData += caption;
         resultData += '</p> </li>';
       });
+      // var unloadImage = $('.loading').hide();
 
       $('.articleList').append(resultData);
 
     }).fail(function() {
       console.log('This did not work')
-    });
-  })
+    })
+     .always(function() {
+     $('.loadingImage').hide();
+      })
+  });
 });
