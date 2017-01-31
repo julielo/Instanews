@@ -206,7 +206,14 @@ li {
 
 .selectric {
   width: 180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background: #2c3e50; }
+
+.selectric .label {
+  color: #ffffff; }
+
+.selectric .button {
+  background: #2c3e50; }
 
 footer {
   -ms-flex-line-pack: end;
