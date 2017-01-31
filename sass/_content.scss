@@ -9,21 +9,24 @@
 //****************************************************
 // For the article grid
 //****************************************************
-ul {
+.apiList {
   display: flex;
 }
 
-li {
-  flex: 0 2 auto;
+.article-grid {
+  // flex: 0 2 auto;
+  width:100%;
   list-style: none;
   position: relative;
-  height: 50%;
+  height: 40%;
 
   @include media ($tablet-width) {
-    flex: 0 2 50%;
+    // flex: 0 2 50%;
+    width: 50%;
   }
   @include media ($desktop-width) {
-    flex: 0 2 25%;
+    // flex: 0 2 25%;
+    width: 25%;
   }
 }
 
@@ -36,6 +39,9 @@ li {
 .article-grid {
   height: 420px;
   background-size: cover;
+  @include media ($tablet-width) {
+    height: 267px;
+  }
 }
 
 li {
@@ -43,8 +49,14 @@ li {
 }
 
 .caption {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     position: absolute;
     bottom: 0.1%;
     text-align: left;
+}
+
+//Set width of Selectric plugin and centre
+.selectric {
+  width: 180px;
+  margin: 0 auto;
 }

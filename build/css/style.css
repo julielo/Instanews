@@ -102,8 +102,8 @@ body {
           justify-content: flex-start; } }
 
 .panel-resize {
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   height: auto; }
@@ -164,24 +164,21 @@ select:active, select:hover {
   width: 50px;
   margin: 0 auto; }
 
-ul {
+.apiList {
   display: -ms-flexbox;
   display: flex; }
 
-li {
-  -ms-flex: 0 2 auto;
-      flex: 0 2 auto;
+.article-grid {
+  width: 100%;
   list-style: none;
   position: relative;
-  height: 50%; }
+  height: 40%; }
   @media all and (min-width: 600px) {
-    li {
-      -ms-flex: 0 2 50%;
-          flex: 0 2 50%; } }
+    .article-grid {
+      width: 50%; } }
   @media all and (min-width: 1000px) {
-    li {
-      -ms-flex: 0 2 25%;
-          flex: 0 2 25%; } }
+    .article-grid {
+      width: 25%; } }
 
 .articleList {
   display: -ms-flexbox;
@@ -194,15 +191,22 @@ li {
 .article-grid {
   height: 420px;
   background-size: cover; }
+  @media all and (min-width: 600px) {
+    .article-grid {
+      height: 267px; } }
 
 li {
   cursor: pointer; }
 
 .caption {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
   bottom: 0.1%;
   text-align: left; }
+
+.selectric {
+  width: 180px;
+  margin: 0 auto; }
 
 footer {
   -ms-flex-line-pack: end;

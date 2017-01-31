@@ -22,7 +22,7 @@
 // Used to resize header upon section selection
 //*********************************************
 .panel-resize {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   height: auto;
   @include media ($tablet-width) {

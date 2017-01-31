@@ -1,4 +1,6 @@
+
 $(function() {
+  $('select').selectric();
 
   var $articleList = $('.articleList');
   $('.loadingImage').hide();
@@ -30,7 +32,7 @@ $(function() {
       that only have images */
       var $dataSet = data.results.filter(function (item) {
       return item.multimedia.length;
-      }).slice(0, 12);
+    }).slice(0, 12);
 
       /*Loop iterates over array to create a list of images with links to article,
       alt tags, and captions */
@@ -40,7 +42,7 @@ $(function() {
         var title = value.title;
         var caption = value.abstract;
 
-        resultData += '<li class="article-grid"  alt="'+ title +'" style="background-image: url(' + image + ');"> <a href=';
+        resultData += '<li class="article-grid" alt="'+ title +'" style="background-image: url(' + image + ');"> <a href=';
         resultData += url;
         resultData += '>';
         resultData += ' </a> <p class="caption">';
