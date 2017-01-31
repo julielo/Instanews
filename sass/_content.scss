@@ -49,10 +49,12 @@ li {
 }
 
 .caption {
+    font-family: $main-font;
+    font-size: $base-font-size;
+    text-align: left;
     background-color: rgba(0,0,0,0.6);
     position: absolute;
-    bottom: 0.1%;
-    text-align: left;
+    bottom: 0;
 }
 
 //Selectric JQuery plugin for selects
