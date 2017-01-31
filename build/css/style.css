@@ -195,6 +195,9 @@ li {
   height: 420px;
   background-size: cover; }
 
+li {
+  cursor: pointer; }
+
 .caption {
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
