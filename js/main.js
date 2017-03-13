@@ -1,4 +1,3 @@
-
 $(function() {
   $('select').selectric(); // Use Selectric plugin for drop-down menu
 
@@ -28,41 +27,40 @@ $(function() {
     }).done(function(data) {
       var resultData = ''
 
-      /*Filter and Slice methods used on array to filter the first 12 articles
-      that only have images */
-      var $dataSet = data.results.filter(function (item) {
+    /*Filter and Slice methods used on array to filter the first 12 articles
+    that only have images */
+    var $dataSet = data.results.filter(function (item) {
       return item.multimedia.length;
     }).slice(0, 12);
 
-      /*Loop iterates over array to create a list of images with links to article,
-      alt tags, and captions */
-      $.each($dataSet, function(key, value) {
-        var url = value.url;
-        var image = value.multimedia[4].url;
-        var title = value.title;
-        var caption = value.abstract;
+    /*Loop iterates over array to create a list of images with links to article,
+    alt tags, and captions */
+    $.each($dataSet, function(key, value) {
+      var url = value.url;
+      var image = value.multimedia[4].url;
+      var title = value.title;
+      var caption = value.abstract;
 
-        resultData += '<li class="article-grid" alt="'+ title +'" style="background-image: url(' + image + ');"> <a href=';
-        resultData += url;
-        resultData += '>';
-        resultData += ' </a> <p class="caption">';
-        resultData += caption;
-        resultData += '</p> </li>';
-      });
+      resultData += '<li class="article-grid" alt="'+ title +'" style="background-image: url(' + image + ');"> <a href=';
+      resultData += url;
+      resultData += '>';
+      resultData += ' </a> <p class="caption">';
+      resultData += caption;
+      resultData += '</p> </li>';
+    });
 
-      $('.loadingImage').hide();
-      $('.articleList').append(resultData);
-
+    $('.loadingImage').hide();
+    $('.articleList').append(resultData);
     }).fail(function() {
       $('.loadingImage').append('p').text('Oops. Well...this is embarrassing!');
     })
-     .always(function() {
-     $('.loadingImage').hide();
-      })
+    .always(function() {
+      $('.loadingImage').hide();
+    })
   });
 
   //For all list items in list, open link in new window when clicked
   $('.articleList').on('click', 'li', function() {
-         window.open($(this).find('a').attr('href'));
-     });
+    window.open($(this).find('a').attr('href'));
+  });
 });
