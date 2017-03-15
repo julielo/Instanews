@@ -228,6 +228,10 @@ li {
   color: #fff;
   text-align: left; }
 
+.selectric-scroll li {
+  color: #fff;
+  text-align: left; }
+
 footer {
   -ms-flex-line-pack: end;
       align-content: flex-end;
