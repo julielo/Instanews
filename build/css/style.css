@@ -199,12 +199,14 @@ li {
   cursor: pointer; }
 
 .caption {
+  position: absolute;
+  bottom: 0;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  line-height: 1.5;
   text-align: left;
   background-color: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0; }
+  padding: 8px 8px; }
 
 .selectric {
   width: 180px;
